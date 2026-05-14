@@ -68,4 +68,3 @@ jobs:
             </header>
             <iframe src="kucharka.pdf"></iframe>
           </body></html>' > web/index.html          files: build/main.pdf
->>>>>>> Stashed changes
