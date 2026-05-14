@@ -1,0 +1,1048 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[dvipsnames,x11names,svgnames]{xcolor} 
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{recipebox}
+
+\begin{document}
+
+% ==========================================
+% TITULNÍ STRANA (ULTRA STABILNÍ VERZE)
+% ==========================================
+\begin{titlepage}
+    \begin{tcolorbox}[
+        enhanced,
+        height=\textheight,
+        colframe=Mahogany,
+        colback=Orange!5,
+        arc=12mm,
+        boxrule=4pt,
+        halign=center,
+        valign=center,
+        % Pokud by shadow stále zlobil, stačí tento řádek smazat
+        drop shadow={black!30} 
+    ]
+    \vspace*{2cm}
+    {\Huge \bfseries \color{Mahogany} POSBÍRANÉ RECEPTY \par}
+    
+    \vspace{1cm}
+    {\Large \itshape \color{OliveGreen} pro Řinečku a Zaníka \par}
+    
+    \vspace{3cm}
+    % \includegraphics[width=0.7\textwidth]{obrazek.jpg}
+    \vspace{3cm}
+    
+    \vfill
+    {\Large \bfseries \color{Mahogany} Rodinná Kuchařka \par}
+    \vspace*{1cm}
+    \end{tcolorbox}
+\end{titlepage}
+
+% ==========================================
+% OBSAH A ZKRATKY
+% ==========================================
+\pagenumbering{Alph} % Dočasné číslování pro titulku (opraví varování logu)
+\tableofcontents
+\newpage
+\pagenumbering{arabic} % Ostré číslování receptů od strany 1
+
+\section*{Zkratky:}
+\begin{itemize}[label=\color{Mahogany}\faChevronRight]
+    \item \textbf{PL} = polévková lžíce
+    \item \textbf{KL} = kávová lžička
+\end{itemize}
+\vspace{1cm}
+
+% --- Tady už pokračují tvoje recepty ---
+% ==========================================
+% RECEPTY
+% ==========================================
+
+\begin{recipe}[NavyBlue]{Jíška}
+    \begin{ingredients}
+        \item \piece \textbf{1 cm} \\ Másla
+        \item \spoon \textbf{1,5 PL} \\ Hladké mouky
+        \item \liquid \textbf{dle potřeby} \\ Voda nebo mléko
+    \end{ingredients}
+    \begin{steps}
+        \item Do rendlíku dám máslo a nechám na plotně pomalu rozpustit. 
+        \item Když je máslo rozpuštěné, přidám hladkou mouku a míchám na mírném ohni. 
+        \item Když je jíška zlatavá a krásně voní, přidám trošku studené vody nebo mléka a zase míchám. Když se spojí voda s moukou, zase přidám trošku vody a míchám. 
+        \item Tento proces opakuji tak dlouho, až má jíška konzistenci řidší kaše. Jíška nesmí mít hrudky, pokud se tak stane, přecedím jí přes jemné sítko.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[ForestGreen]{Polévka písmenková}
+    \begin{ingredients}
+        \item \liquid \textbf{2 l} \\ Vývaru (hovězí/vepřový/kuřecí)
+        \item \indefinite \textbf{2 hrsti} \\ Zeleniny
+        \item \piece \textbf{1 hrnek} \\ Písmenek (těstoviny)
+        \item \spoon \textbf{1 PL} \\ Bylin (petržel, libeček)
+        \item \weight \textbf{dle chuti} \\ Maso z vývaru
+        \item \piece \textbf{1 stroužek} \\ Česneku
+        \item \indefinite \textbf{špetka} \\ Pepře
+    \end{ingredients}
+    \begin{steps}
+        \item Dáme vařit 1 – 1,5 litru vody, když se vaří, osolíme a nasypeme písmenka. Uvaříme je podle návodu. 
+        \item Když jsou písmenka měkká, scedíme je a pod studenou vodou propláchneme. Dáme stranou okapat. 
+        \item V jiném hrnci přivedeme k varu vývar. Přidáme zeleninu a maso a vaříme do měkka (5-10 minut). 
+        \item Přidáme okapaná písmenka a převaříme. Odstavíme z ohně, opepříme, přidáme rozdrcený česnek a bylinky.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[ForestGreen]{Polévka s nudličkami}
+    \begin{ingredients}
+        \item \liquid \textbf{2 l} \\ Vývaru
+        \item \indefinite \textbf{2 hrsti} \\ Zeleniny
+        \item \piece \textbf{1 hrnek} \\ Nudliček
+        \item \spoon \textbf{1 PL} \\ Bylin
+    \end{ingredients}
+    \begin{steps}
+        \item Postup je stejný jako u polévky písmenkové, jen zaměníme písmenka za nudličky.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[ForestGreen]{Polévka s kapáním}
+    \begin{ingredients}
+        \item \piece \textbf{2 ks} \\ Vejce
+        \item \spoon \textbf{1 PL} \\ Mléka
+        \item \indefinite \textbf{dle chuti} \\ Sůl, pepř, bylinky
+        \item \weight \textbf{dle potřeby} \\ Polohrubá mouka
+    \end{ingredients}
+    \begin{steps}
+        \item Postup u vývaru je stejný jako u polévky písmenkové.
+        \item V hrníčku rozšleháme vidličkou vejce, přidáme mléko, koření a zašleháváme postupně polohrubou mouku, dokud nevznikne těstíčko. 
+        \item Na kapání má být husté tak, aby těsto šlo přes struhadlo stěrkou protlačit. Protlačujeme rovnou do vroucí polévky a povaříme pár minut.
+        \item Děláme-li nočky, těstíčko uděláme trochu hustší a z hrníčku vykrajujeme lžičkou noky.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Fuchsia]{Česnečka}
+    \begin{ingredients}
+        \item \liquid \textbf{2 l} \\ Vývaru
+        \item \piece \textbf{3 plátky} \\ Tvrdšího chleba
+        \item \spoon \textbf{3 lžíce} \\ Sádla nebo oleje
+        \item \piece \textbf{5 stroužků} \\ Česneku
+        \item \weight \textbf{5 dkg} \\ Tvrdého sýra (eidam)
+        \item \weight \textbf{10 dkg} \\ Šunky
+        \item \indefinite \textbf{špetka} \\ Pepře a bylinek
+    \end{ingredients}
+    \begin{steps}
+        \item Přivedeme k varu vývar. Stáhneme z plotny a přidáme do něj 3 stroužky česneku, pepř a bylinky. 
+        \item Na pánvi opečeme na sádle nebo oleji na kostičky nakrájený chléb. Po opečení vypneme oheň a do chleba vmícháme 2 stroužky česneku. 
+        \item Do talíře dáme trochu nakrájeného sýra a šunky, zalijeme vývarem a na stůl dáme v misce opečený chléb.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Plum]{Kouličková polévka od babči Libči}
+    \begin{ingredients}
+        \item \piece \textbf{1 ks} \\ Cibule
+        \item \spoon \textbf{1 PL} \\ Sádla
+        \item \piece \textbf{4 kostky} \\ Droždí
+        \item \piece \textbf{9 stroužků} \\ Česneku
+        \item \piece \textbf{1 ks} \\ Petržel a celer (menší)
+        \item \piece \textbf{2 ks} \\ Mrkve
+        \item \piece \textbf{3 hrnky} \\ Strouhanky
+        \item \piece \textbf{3 ks} \\ Vejce
+        \item \liquid \textbf{3 l} \\ Vývaru
+    \end{ingredients}
+    \begin{steps}
+        \item Na sádle necháme zesklovatět nadrobno nakrájenou cibuli. Přidáme droždí a na mírném plamenu necháme rozpustit. 
+        \item Dáme vařit vývar s nadrobno nakrájenou zeleninou. 
+        \item Do větší misky dáme strouhanku, osolíme, opepříme, přidáme prolisovaný česnek, majoránku, celá vejce a vychladlé droždí. 
+        \item Přidáme trochu mléka nebo vývaru a vypracujeme tužší hmotu, ze které tvarujeme kouličky. 
+        \item Kouličky vhazujeme do vroucího vývaru a vaříme, dokud nevyplavou nahoru.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[OliveGreen]{Bramboračka od babičky Jižňácké}
+    \begin{ingredients}
+        \item \liquid \textbf{2 l} \\ Vody
+        \item \piece \textbf{4 ks} \\ Menší brambory
+        \item \weight \textbf{300 g} \\ Zeleniny (mrkev, celer, květák...)
+        \item \piece \textbf{1 hrnek} \\ Sušených hub
+        \item \piece \textbf{2 kostky} \\ Masoxu
+        \item \indefinite \textbf{1 KL} \\ Majoránky a koření
+        \item \piece \textbf{2 stroužky} \\ Česneku
+        \item \spoon \textbf{dle potřeby} \\ Jíška
+    \end{ingredients}
+    \begin{steps}
+        \item Houby dám do hrnku, zaliji studenou vodou a nechám nabobtnat. 
+        \item Dám do hrnce vodu, přidám na kostičky nakrájené brambory a zeleninu. Přidám masox nebo sůl a okořením. 
+        \item Z hub sliji vodu a přidám je do hrnce. Přivedu k varu. 
+        \item Přidám rozředěnou jíšku a vařím, dokud zelenina, brambory a houby nejsou měkké. Stáhnu z plotny a přidám drcený česnek.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BurntOrange]{Cibulačka}
+    \begin{ingredients}
+        \item \piece \textbf{4 ks} \\ Velké cibule
+        \item \liquid \textbf{1,5 l} \\ Hovězího vývaru
+        \item \liquid \textbf{dle potřeby} \\ Olivový olej
+        \item \weight \textbf{100 g} \\ Parmazánu
+        \item \piece \textbf{2 ks} \\ Starší rohlíky
+        \item \piece \textbf{2 ks} \\ Vejce
+    \end{ingredients}
+    \begin{steps}
+        \item Cibule nakrájíme na půlkolečka a osmažíme dozlatova na oleji. 
+        \item Zalijeme vývarem, přidáme libeček, sůl a pepř a 5-10 minut povaříme. Nakonec přidáme čerstvou petrželku. 
+        \item Rohlíky nakrájíme na kolečka, namáčíme v rozšlehaném osoleném vejci a smažíme dozlatova. 
+        \item Polévka se podává s těmito „pavézkami“ a posypaná parmazánem.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[RawSienna]{Vývar}
+    \begin{ingredients}
+        \item \weight \textbf{300 g} \\ Masa s kostí
+        \item \liquid \textbf{2 l} \\ Vody
+        \item \piece \textbf{1 ks} \\ Cibule
+        \item \piece \textbf{2 ks} \\ Bobkové listy
+        \item \piece \textbf{7 kuliček} \\ Nového koření a pepře
+        \item \indefinite \textbf{dle chuti} \\ Sůl
+    \end{ingredients}
+    \begin{steps}
+        \item Do papiňáku dáme vodu, vložíme maso a kosti, přidáme koření. 
+        \item Z cibule sloupneme jen ošklivou slupku, rozkrojíme napůl a přidáme k masu. Papiňák zavřeme a vaříme. 
+        \item Délka vaření závisí na mase: Hovězí +/- 2 hodiny, vepřové +/- 1,5 hodiny, kuřecí +/- hodinu. 
+        \item Po uvaření vývar přecedíme. Maso obereme a nakrájíme do polévky.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BrickRed]{Směs na topinky}
+    \begin{ingredients}
+        \item \piece \textbf{1 ks} \\ Cibule
+        \item \weight \textbf{3 ks} \\ Kuřecí prsa
+        \item \liquid \textbf{1 ks} \\ Rajský protlak
+        \item \piece \textbf{5 kostek} \\ Cukru
+        \item \indefinite \textbf{1 balení} \\ Mražená zelenina
+        \item \piece \textbf{1 ks} \\ Červená paprika
+        \item \piece \textbf{2 stroužky} \\ Česneku
+        \item \spoon \textbf{1 PL} \\ Sójové omáčky
+        \item \piece \textbf{1 cm plátek} \\ Másla
+    \end{ingredients}
+    \begin{steps}
+        \item Cibuli oloupeme a nakrájíme nadrobno. Rozpustíme máslo, přidáme olej a osmažíme cibuli do zlatova. 
+        \item Přidáme na drobné kostičky nakrájené kuřecí maso, osolíme a opepříme. Smažíme, dokud není maso skoro hotové. 
+        \item Přidáme zeleninu, papriku, rajský protlak a cukr a dusíme do změknutí. 
+        \item Dochutíme sójovou omáčkou, oreganem a drceným česnekem. Je-li omáčka řídká, zahustíme solamylem rozmíchaným ve vodě.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% SLADKÉ PEČENÍ A DEZERTY (1. část)
+% ==========================================
+
+\begin{recipe}[Chocolate]{Tvaroh s čokoládou od maminky}
+    \begin{ingredients}
+        \item \piece \textbf{1 vanička} \\ Tvarohu (polotučný/tučný)
+        \item \liquid \textbf{dle potřeby} \\ Mléko
+        \item \spoon \textbf{3 PL} \\ Moučkového cukru
+        \item \spoon \textbf{1/2 PL} \\ Kakaa
+    \end{ingredients}
+    \begin{steps}
+        \item Tvaroh dáme do vyšší misky a elektrickým šlehačem rozšleháme.
+        \item Přidáme tolik mléka, aby vznikla pěna řidší konzistence, než je krupicová kaše. Rozdělíme do misek.
+        \item V hrníčku smícháme cukr a kakao s trochou mléka, až vznikne tekutá čokoládová poleva.
+        \item Polevu nalijeme na tvaroh. Pokud je konzistence správná, čokoláda klesne na dno.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Goldenrod]{Listové tyčinky / jednohubky}
+    \begin{ingredients}
+        \item \piece \textbf{1 balíček} \\ Listového těsta
+        \item \piece \textbf{1 ks} \\ Vejce (na potření)
+        \item \indefinite \textbf{varianta 1} \\ Klobása a sýr
+        \item \indefinite \textbf{varianta 2} \\ Šunka a sýr
+        \item \indefinite \textbf{varianta 3} \\ Niva nebo tuňák
+    \end{ingredients}
+    \begin{steps}
+        \item Těsto rozválíme na velikost plechu. Položíme na pečicí papír.
+        \item Pomažeme rozšlehaným vajíčkem a poklademe zvolenou ozdobou (sýr, šunka, koření).
+        \item Rádýlkem rozkrájíme na tyčinky nebo čtverečky.
+        \item Pečeme v rozpálené troubě na 200 °C asi 10 minut, pak snížíme na 170 °C a dopečeme dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[RoyalPurple]{Prošívaná deka od Drissinky}
+    \begin{ingredients}
+        \item \piece \textbf{2 hrnky} \\ Polohrubé mouky
+        \item \piece \textbf{3 ks} \\ Vejce
+        \item \piece \textbf{1 ks} \\ Prášek do pečiva
+        \item \liquid \textbf{1/2 hrnku} \\ Mléka a 5 PL oleje
+        \item \piece \textbf{1 hrnek} \\ Cukru a 3 PL kakaa
+        \item \piece \textbf{2 ks} \\ Tvarohy (náplň)
+        \item \piece \textbf{1/2 ks} \\ Vanilkového pudinku (náplň)
+    \end{ingredients}
+    \begin{steps}
+        \item Smícháme suroviny na náplň (tvaroh, žloutky, pudink, cukr) a dáme do zdobicího sáčku.
+        \item Smícháme přísady na tmavé těsto a nalijeme na vymazaný a vysypaný plech.
+        \item Tvarohovou náplní naneseme na těsto pruhy do mřížky.
+        \item Pečeme v předehřáté troubě, dokud těsto nevyběhne kolem tvarohu a nevytvoří efekt "deky".
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Plum]{Koláč tety Boženy (od babi Prosecké)}
+    \begin{ingredients}
+        \item \piece \textbf{2 hrnky} \\ Polohrubé mouky
+        \item \piece \textbf{1 hrnek} \\ Cukru a 1 ks vejce
+        \item \liquid \textbf{1/2 hrnku} \\ Oleje a 1 hrnek mléka
+        \item \piece \textbf{1/2 ks} \\ Prášku do pečiva
+        \item \indefinite \textbf{dle sezóny} \\ Ovoce (švestky, meruňky)
+        \item \piece \textbf{drobenka} \\ Máslo, mouka, cukr
+    \end{ingredients}
+    \begin{steps}
+        \item Nejdříve si připravíme drobenku rozemnutím másla s cukrem a moukou.
+        \item Všechny přísady na těsto smícháme a rozetřeme na vymazaný a vysypaný plech.
+        \item Poklademe ovocem a hustě zasypeme drobenkou.
+        \item Pečeme v předehřáté troubě dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Sienna]{Čoko muffiny}
+    \begin{ingredients}
+        \item \weight \textbf{330 g} \\ Polohrubé mouky
+        \item \piece \textbf{1 ks} \\ Prášek do pečiva
+        \item \spoon \textbf{3 PL} \\ Kakaa a 150 g cukru
+        \item \piece \textbf{3 ks} \\ Vejce
+        \item \liquid \textbf{270 ml} \\ Mléka a 188 g másla
+        \item \weight \textbf{150 g} \\ Nasekané čokolády
+    \end{ingredients}
+    \begin{steps}
+        \item Máslo rozehřejeme a v misce smícháme se všemi ostatními surovinami.
+        \item Nakonec vmícháme nasekanou čokoládu a ořechy.
+        \item Plníme do formiček na muffiny (silikonové nemusíme mazat).
+        \item Pečeme na 180 °C přibližně 20–25 minut.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[DarkOrchid]{Trojbarevný koláč (Blanka Černá)}
+    \begin{ingredients}
+        \item \piece \textbf{1. těsto} \\ 2 hrnky mouky, 1/2 másla, kakao
+        \item \piece \textbf{2. těsto} \\ 3 tvarohy, cukr, 1 vejce
+        \item \piece \textbf{3. těsto} \\ 3 vejce, 1 hrnek mouky, 1/2 hrnku oleje
+    \end{ingredients}
+    \begin{steps}
+        \item První těsto zpracujeme prsty jako drobenku a napěchujeme na dno plechu.
+        \item Na něj opatrně rozetřeme tvarohovou náplň (druhé těsto).
+        \item Třetí těsto vyšleháme (vejce s cukrem do pěny, pak zbytek) a nalijeme navrch.
+        \item Pečeme v troubě, dokud horní piškotová vrstva není hotová.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BurntOrange]{Bábovka ze šlehačky od tety Aleny}
+    \begin{ingredients}
+        \item \piece \textbf{1/2 l} \\ Polohrubé mouky
+        \item \piece \textbf{1/4 l} \\ Cukru krystal
+        \item \piece \textbf{3 ks} \\ Vejce
+        \item \liquid \textbf{1/4 l} \\ Šlehačky (33\%)
+        \item \piece \textbf{1 ks} \\ Prášek do pečiva
+        \item \spoon \textbf{3 PL} \\ Kakaa (do půlky těsta)
+    \end{ingredients}
+    \begin{steps}
+        \item Všechny suroviny (kromě kakaa) smícháme v řidší těsto.
+        \item Formu vymažeme a vysypeme hrubou moukou.
+        \item Do formy nalijeme 2/3 těsta, zbytek obarvíme kakaem a dolijeme.
+        \item Pečeme na 200 °C asi 10 min, pak stáhneme na 175 °C a dopékáme (celkem cca 45 min).
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% SLADKÉ PEČENÍ (2. část)
+% ==========================================
+
+\begin{recipe}[DimGray]{Vláčný makovec}
+    \begin{ingredients}
+        \item \weight \textbf{300 g} \\ Mletého máku
+        \item \weight \textbf{130 g} \\ Polohrubé mouky
+        \item \liquid \textbf{200 ml} \\ Mléka a 200 g jogurtu
+        \item \piece \textbf{2 ks} \\ Vejce a 120 g cukru
+        \item \spoon \textbf{2 PL} \\ Džemu a 2 PL kakaa
+        \item \indefinite \textbf{citron} \\ Kůra a lžička sody
+    \end{ingredients}
+    \begin{steps}
+        \item Změklé máslo utřete s cukrem, solí, skořicí a kakaem.
+        \item Zašlehejte vejce, džem, jogurt a citronovou kůru.
+        \item Nakonec vmíchejte mák, mouku se sodou a mléko.
+        \item Pečte v papírem vyložené formě na 170 °C asi 50 minut. Po vychladnutí můžete polít citronovou polevou.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Goldenrod]{Bábovka s vaječným likérem}
+    \begin{ingredients}
+        \item \piece \textbf{5 ks} \\ Vajec a 200 g cukru
+        \item \liquid \textbf{250 ml} \\ Vaječného likéru
+        \item \liquid \textbf{250 ml} \\ Oleje
+        \item \weight \textbf{300 g} \\ Polohrubé mouky
+        \item \piece \textbf{1 ks} \\ Prášek do pečiva
+        \item \spoon \textbf{3 PL} \\ Kakaa (do části těsta)
+    \end{ingredients}
+    \begin{steps}
+        \item Vejce ušleháme s cukrem do pěny. Tenkým pramínkem zašleháme likér a olej.
+        \item Vařečkou lehce vmícháme mouku s práškem do pečiva.
+        \item Do vymazané a vysypané formy nalijeme polovinu těsta, druhou obarvíme kakaem a dolijeme.
+        \item Pečeme na 200 °C (30 min), pak snížíme na 180 °C a dopečeme.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BrickRed]{Perník s marmeládou (od Martiny)}
+    \begin{ingredients}
+        \item \piece \textbf{2 hrnky} \\ Polohrubé mouky
+        \item \liquid \textbf{1 hrnek} \\ Mléka a 1 hrnek oleje
+        \item \piece \textbf{1 hrnek} \\ Cukru a 2 vejce
+        \item \piece \textbf{1 ks} \\ Prášek do perníku
+        \item \spoon \textbf{2 PL} \\ Kakaa
+        \item \indefinite \textbf{poleva} \\ Čokoláda na vaření a tuk
+    \end{ingredients}
+    \begin{steps}
+        \item Vejce s cukrem šleháme do husté pěny (klidně 10 minut).
+        \item Zašleháme olej. Mouku smícháme s práškem a kakaem a střídavě s mlékem vmícháme do směsi.
+        \item Pečeme na 170 °C. Po vychladnutí rozřízneme, namažeme marmeládou a polijeme čokoládou rozpuštěnou ve vodní lázni.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[RoyalBlue]{Tachtlárna od babči Libči}
+    \begin{ingredients}
+        \item \piece \textbf{9 ks} \\ Vajec a 10 PL cukru
+        \item \weight \textbf{12 PL} \\ Polohrubé mouky
+        \item \liquid \textbf{1 dcl} \\ Oleje a 3/4 prdopeče
+        \item \piece \textbf{krém} \\ Máslo, tvaroh, cukr
+        \item \indefinite \textbf{ovoce} \\ Broskve, mandarinky
+        \item \liquid \textbf{poleva} \\ Šťáva z kompotu a pudink
+    \end{ingredients}
+    \begin{steps}
+        \item Upečeme piškot z vajec, cukru, oleje a mouky. Necháme vychladnout.
+        \item Vyšleháme máslo s cukrem, vmícháme tvaroh a natřeme na korpus. Poklademe ovocem.
+        \item Z kompotové šťávy (doplněné vodou na 800 ml) a pudinků uvaříme husté želé.
+        \item Vlažnou polevu nalijeme na ovoce a necháme v chladu ztuhnout.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[DeepPink]{Řezy Margot (Simona Tobišková)}
+    \begin{ingredients}
+        \item \piece \textbf{2 hrnky} \\ Polohrubé mouky
+        \item \piece \textbf{2 ks} \\ Vejce a 1 hrnek cukru
+        \item \liquid \textbf{1 kelímek} \\ Šlehačky a 3 PL oleje
+        \item \piece \textbf{1 ks} \\ Velká Margotka (strouhaná)
+        \item \piece \textbf{1 ks} \\ Prášek do pečiva
+    \end{ingredients}
+    \begin{steps}
+        \item Nastrouháme Margotku a smícháme ji se všemi ostatními surovinami.
+        \item Pokud je těsto moc husté, kápneme trochu mléka.
+        \item Nalijeme na vymazaný plech a upečeme.
+        \item Vychladlou buchtu polijeme čokoládovou polevou.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Sienna]{Sokratovy perníčky (Honza Šedina)}
+    \begin{ingredients}
+        \item \weight \textbf{400 g} \\ Hladké mouky
+        \item \weight \textbf{150 g} \\ Moučkového cukru
+        \item \piece \textbf{2 ks} \\ Vejce
+        \item \spoon \textbf{2 PL} \\ Medu a 50 g másla
+        \item \spoon \textbf{1-2 KL} \\ Jedlé sody
+        \item \indefinite \textbf{koření} \\ Skořice, hřebíček, badyán
+    \end{ingredients}
+    \begin{steps}
+        \item Máslo s medem rozehřejeme. Vypracujeme těsto a necháme ho uležet.
+        \item Vyválíme placku (0,5 cm) a vykrajujeme tvary.
+        \item Pečeme na 180 °C asi 4–8 minut.
+        \item Ihned po vytažení z trouby potřeme žloutkem pro krásný lesk.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% JABLKA, OŘECHY A ZÁVINY
+% ==========================================
+
+\begin{recipe}[Goldenrod]{Štrůdl (z jogurtového těsta)}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Hladké mouky
+        \item \weight \textbf{250 g} \\ Hery
+        \item \piece \textbf{1 kelímek} \\ Bílého jogurtu
+        \item \piece \textbf{1 ks} \\ Vejce (do těsta + na potření)
+        \item \indefinite \textbf{náplň} \\ Jablka, skořice, cukr
+        \item \indefinite \textbf{extra} \\ Ořechy, rozinky v rumu, strouhanka
+    \end{ingredients}
+    \begin{steps}
+        \item Z mouky, Hery, jogurtu a vejce vypracujeme těsto a necháme v lednici odležet.
+        \item Rozdělíme na dvě části, vyválíme dotenka. Posypeme strouhankou (aby nepromáčela těsto).
+        \item Poklademe nastrouhanými jablky, cukrem, skořicí, ořechy a rozinkami.
+        \item Zavineme, okraje založíme dospod. Potřeme vejcem a propícháme vidličkou.
+        \item Pečeme na 180 °C dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[ForestGreen]{Netradiční tvarohový závin s ovocem}
+    \begin{ingredients}
+        \item \weight \textbf{300 g} \\ Hladké mouky a 220 g tuku
+        \item \piece \textbf{2 ks} \\ Žloutky (do těsta)
+        \item \piece \textbf{500 g} \\ Měkkého tvarohu (náplň)
+        \item \piece \textbf{2 ks} \\ Žloutky (do náplně)
+        \item \indefinite \textbf{350 g} \\ Jahod nebo jiného ovoce
+        \item \indefinite \textbf{posyp} \\ Mandlové lupínky
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme hladké těsto z mouky, tuku a žloutků. Rozdělíme na poloviny.
+        \item Pláty potřeme směsí tvarohu, cukru a žloutků. Poklademe ovocem.
+        \item Zavineme, potřeme rozšlehaným vejcem a posypeme mandlemi.
+        \item Upečeme v předehřáté troubě dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Sienna]{Křehký jablečník}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Hladké mouky
+        \item \weight \textbf{250 g} \\ Másla (studené)
+        \item \piece \textbf{2 ks} \\ Vejce a 2 PL zakysané smetany
+        \item \weight \textbf{130 g} \\ Moučkového cukru
+        \item \weight \textbf{1 kg} \\ Jablek (nastrouhaných)
+        \item \indefinite \textbf{koření} \\ Skořice, hřebíček, badyán
+    \end{ingredients}
+    \begin{steps}
+        \item Z mouky, cukru, másla, vajec a smetany rychle vypracujeme těsto. Necháme 20 min v chladu.
+        \item Rozdělíme na dvě části. První vyválíme (ideálně mezi dvěma papíry) a dáme na plech.
+        \item Poklademe vymačkanými jablky s kořením. Přikryjeme druhým plátem.
+        \item Vidličkou spojíme okraje a propícháme povrch. Pečeme na 180 °C (25–35 min).
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Chocolate]{Ořechové řezy (Jaruška Semenská - VZLÚ)}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Hladké mouky (těsto)
+        \item \weight \textbf{200 g} \\ Másla a 2 PL medu (těsto)
+        \item \piece \textbf{300 g} \\ Ořechů (směs nasekaná)
+        \item \weight \textbf{120 g} \\ Másla a 3 KL medu (ořech. směs)
+        \item \liquid \textbf{3 dl} \\ Mléka (krém)
+        \item \weight \textbf{200 g} \\ Másla (krém)
+    \end{ingredients}
+    \begin{steps}
+        \item Těsto rozdělíme na dva díly. První placku upečeme samostatně (15 min).
+        \item Na druhou placku dáme ořechovou směs (osmaženou dozlatova na pánvi) a upečeme.
+        \item Z mléka, mouky a solamylu uvaříme kaši. Po vychladnutí vyšleháme s máslem, cukrem a citronem v krém.
+        \item První placku pomažeme krémem a přiklopíme ořechovou plackou. Necháme 24 h uležet v lednici.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Maroon]{Italské tiramisu}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Mascarpone
+        \item \piece \textbf{5 ks} \\ Vajec
+        \item \spoon \textbf{5 PL} \\ Třtinového cukru
+        \item \liquid \textbf{1 šálek} \\ Silné kávy
+        \item \liquid \textbf{4 PL} \\ Amaretta
+        \item \piece \textbf{2 bal.} \\ Cukrářských piškotů
+    \end{ingredients}
+    \begin{steps}
+        \item Žloutky ušleháme s cukrem, bílky zvlášť na sníh. Do žloutků zašleháme Mascarpone a pak sníh.
+        \item Piškoty jen krátce namáčíme v kávě s likérem a skládáme do formy.
+        \item Střídáme vrstvy piškotů a krému. Končíme krémem.
+        \item Bohatě zasypeme kakaem a necháme aspoň 2 hodiny v chladu.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% SLANÉ PEČENÍ A KYNUTÉ DOBROTY
+% ==========================================
+
+\begin{recipe}[ForestGreen]{Kynuté – nekynuté těsto}
+    \begin{ingredients}
+        \item \weight \textbf{60 dkg} \\ Hladké mouky
+        \item \piece \textbf{1 kostka} \\ Droždí
+        \item \weight \textbf{1/2 ks} \\ Hery (nebo 2 dcl oleje)
+        \item \piece \textbf{2 ks} \\ Vejce
+        \item \piece \textbf{1 ks} \\ Prášek do pečiva
+        \item \liquid \textbf{1 dcl} \\ Mléka
+    \end{ingredients}
+    \begin{steps}
+        \item Na vále zpracujeme rukama všechny suroviny v hladké těsto.
+        \item **Pozor!** Toto těsto se nenechává kynout. Musí se zpracovat ihned!
+        \item Hodí se skvěle na pizzu, koláče nebo domácí buchty.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[RawSienna]{Škvarkové placky od babi Tobi}
+    \begin{ingredients}
+        \item \weight \textbf{1 kg} \\ Mouky (1/2 hl., 1/2 pol.)
+        \item \weight \textbf{40 dkg} \\ Sekaných škvarků
+        \item \piece \textbf{1 kostka} \\ Droždí a 3 vejce
+        \item \weight \textbf{10 dkg} \\ Sádla
+        \item \liquid \textbf{600 ml} \\ Mléka
+        \item \indefinite \textbf{koření} \\ Kmín, pepř, sůl
+    \end{ingredients}
+    \begin{steps}
+        \item Z trochy mléka, cukru a droždí uděláme kvásek.
+        \item Smícháme mouku, vejce, sádlo, koření, kvásek a škvarky. Vypracujeme těsto a necháme vykynout.
+        \item Tvoříme placky, na plechu je necháme ještě chvíli dojít, potřeme olejem a uděláme mřížku.
+        \item Pečeme na 200--220 °C, dopékáme horkovzduchem.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[NavyBlue]{Domácí chléb}
+    \begin{ingredients}
+        \item \weight \textbf{1 kg} \\ Hladké mouky chlebové
+        \item \liquid \textbf{6 dl} \\ Vlažné vody
+        \item \piece \textbf{1 kostka} \\ Droždí (42 g)
+        \item \liquid \textbf{2 lžíce} \\ Oleje
+        \item \spoon \textbf{2 lžičky} \\ Soli a 2 lžíce kmínu
+    \end{ingredients}
+    \begin{steps}
+        \item Uděláme kvásek z vody, droždí a cukru. Smícháme s moukou a ostatními surovinami.
+        \item Vypracujeme těsto a necháme 45 min kynout.
+        \item Vytvarujeme bochník na vymazaném plechu a necháme dalších 30 min kynout.
+        \item Třikrát nařízneme, potřeme vejcem a pečeme 15 min na 225 °C, poté 25 min na 200 °C.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% VÁNOČNÍ CUKROVÍ
+% ==========================================
+
+\begin{recipe}[BrickRed]{Išelské dortíčky od babči Libči}
+    \begin{ingredients}
+        \item \weight \textbf{400 g} \\ Hladké mouky
+        \item \weight \textbf{300 g} \\ Másla / Hery
+        \item \weight \textbf{140 g} \\ Moučkového cukru
+        \item \weight \textbf{60 g} \\ Mletých ořechů
+        \item \piece \textbf{2 ks} \\ Žloutky a 40 g kakaa
+        \item \indefinite \textbf{náplň} \\ Máslo, cukr, ořechy, rum
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme těsto a necháme do druhého dne v lednici uležet.
+        \item Vyválíme placku (2 mm), vykrájíme kolečka a upečená (cca 150--170 °C) slepujeme náplní.
+        \item Vršek ozdobíme čokoládovou polevou a půlkou mandle nebo ořechu.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Goldenrod]{Linecké koláčky (bábí Prosecká)}
+    \begin{ingredients}
+        \item \weight \textbf{250 g} \\ Hladké mouky
+        \item \weight \textbf{150 g} \\ Másla
+        \item \weight \textbf{100 g} \\ Moučkového cukru
+        \item \piece \textbf{1 ks} \\ Žloutek a vanilkový cukr
+        \item \indefinite \textbf{náplň} \\ Marmeláda na slepování
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme těsto, necháme uležet v chladu.
+        \item Vykrajujeme plné tvary a stejný počet s vykrojeným středem.
+        \item Pečeme dorůžova (cca 170 °C). Slepujeme marmeládou a sypeme cukrem.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Fuchsia]{Citrónové cukroví}
+    \begin{ingredients}
+        \item \weight \textbf{250 g} \\ Hladké mouky
+        \item \weight \textbf{150 g} \\ Másla a 150 g cukru
+        \item \piece \textbf{1 ks} \\ Žloutek
+        \item \liquid \textbf{1 ks} \\ Šťáva a kůra z citronu
+        \item \indefinite \textbf{poleva} \\ Cukr, citron. šťáva, voda
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme těsto, necháme uležet, vykrájíme a upečeme dorůžova.
+        \item Slepujeme marmeládou.
+        \item Potřeme citronovou polevou (cukr zašlehaný se šťávou a horkou vodou).
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% VÁNOČNÍ FINÁLE
+% ==========================================
+
+\begin{recipe}[Sienna]{Ořechy od babči Libči}
+    \begin{ingredients}
+        \item \weight \textbf{300 g} \\ Hladké mouky
+        \item \weight \textbf{200 g} \\ Másla
+        \item \weight \textbf{150 g} \\ Moučkového cukru
+        \item \weight \textbf{160 g} \\ Mletých ořechů
+        \item \spoon \textbf{2 PL} \\ Kakaa a 2 KL skořice
+        \item \piece \textbf{1 ks} \\ Vejce
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme těsto a necháme uležet. Formičky vymažeme tukem.
+        \item Těsto vtlačíme do formiček tak, aby uprostřed zbyl důlek na náplň.
+        \item Upečeme, vyklopíme a plníme ořechovým krémem (stejný jako u Išelských).
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[NavyBlue]{Vanilkové rohlíčky (teta Alena)}
+    \begin{ingredients}
+        \item \weight \textbf{300 g} \\ Hladké mouky
+        \item \weight \textbf{200 g} \\ Másla
+        \item \weight \textbf{100 g} \\ Mletých ořechů
+        \item \weight \textbf{40 g} \\ Moučkového cukru
+        \item \piece \textbf{2 ks} \\ Žloutky a vanilkový cukr
+    \end{ingredients}
+    \begin{steps}
+        \item Zpracujeme těsto, necháme v chladu odležet.
+        \item Tvarujeme malé rohlíčky a pečeme na plechu dorůžova.
+        \item Ještě horké je opatrně obalujeme v moučkovém cukru smíchaném s vanilkovým.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Maroon]{Vosí hnízda (včelí úly)}
+    \begin{ingredients}
+        \item \weight \textbf{200 g} \\ Piškotů (drcených)
+        \item \weight \textbf{100 g} \\ Másla a 100 g oříšků
+        \item \weight \textbf{180 g} \\ Moučkového cukru
+        \item \spoon \textbf{3 PL} \\ Kakaa a 4 PL rumu
+        \item \indefinite \textbf{náplň} \\ Máslo, cukr, žloutek/koňak
+        \item \piece \textbf{balení} \\ Kulaté piškoty (základna)
+    \end{ingredients}
+    \begin{steps}
+        \item Smícháme drcené piškoty se surovinami na těsto. Formičky vysypeme cukrem.
+        \item Vtlačíme těsto, uděláme vařečkou důlek, vyklepneme.
+        \item Do důlku dáme krém a přitiskneme piškot. Špičky můžeme máčet v čokoládě.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[DarkOrchid]{Nuteláčci od maminky}
+    \begin{ingredients}
+        \item \weight \textbf{250 g} \\ Hladké mouky
+        \item \weight \textbf{160 g} \\ Másla a 100 g cukru
+        \item \spoon \textbf{2 PL} \\ Kakaa a 1 žloutek
+        \item \indefinite \textbf{na ozdobu} \\ Nutela, sekané ořechy
+        \item \indefinite \textbf{extra} \\ Čokoláda a minilentilky
+    \end{ingredients}
+    \begin{steps}
+        \item Upečeme linecká kolečka z kakaového těsta.
+        \item Slepíme dvě kolečka k sobě nutelou.
+        \item Horní stranu mázneme nutelou, vmáčkneme do ořechů, namočíme do čokolády a ozdobíme lentilkou.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BurntOrange]{Marokánky}
+    \begin{ingredients}
+        \item \liquid \textbf{0,5 l} \\ Mléka a 100 g másla
+        \item \weight \textbf{8 PL} \\ Hladké mouky a 10 PL cukru
+        \item \indefinite \textbf{směs} \\ Rozinky, mandle, ořechy
+        \item \piece \textbf{100 g} \\ Kandované ovoce
+        \item \indefinite \textbf{poleva} \\ Čokoláda na vaření
+    \end{ingredients}
+    \begin{steps}
+        \item Mléko, mouku a cukr vaříme do zhoustnutí (kaše), pak přidáme máslo.
+        \item Do hmoty vmícháme nasekané ořechy, mandle a ovoce.
+        \item Na plech děláme lžičkou placičky a pečeme na 180 °C, až okraje zhnědnou.
+        \item Po vychladnutí spodní rovnou stranu potíráme čokoládou.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[ForestGreen]{Tortilla (od Lukáše)}
+    \begin{ingredients}
+        \item \piece \textbf{2 hrnky} \\ Hladké mouky
+        \item \liquid \textbf{1/2 hrnku} \\ Vlažné vody
+        \item \spoon \textbf{3 PL} \\ Oleje a 1 KL soli
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme těsto, aby nelepilo. Rozdělíme na cca 10 bochánků.
+        \item Vyválíme na co nejtenčí placky.
+        \item Pečeme krátce na suché rozpálené pánvi z obou stran.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% HLAVNÍ CHODY - OMÁČKY A MASA
+% ==========================================
+
+\begin{recipe}[Mahogany]{Guláš (Vepřový nebo Hovězí)}
+    \begin{ingredients}
+        \item \weight \textbf{1 kg} \\ Masa (plec, kýta nebo hovězí zadní)
+        \item \weight \textbf{0,5 -- 1 kg} \\ Cibule
+        \item \spoon \textbf{2 PL} \\ Mleté sladké papriky
+        \item \piece \textbf{3 stroužky} \\ Česneku
+        \item \indefinite \textbf{koření} \\ Sůl, pepř, kmín, majoránka, chilli
+        \item \spoon \textbf{1--2 PL} \\ Hladké mouky (na zahuštění)
+    \end{ingredients}
+    \begin{steps}
+        \item Nadrobno nakrájenou cibuli osmažíme na sádle, přidáme maso na kostky a opékáme, dokud nepustí šťávu.
+        \item Zaprášíme paprikou, podlijeme vodou, přidáme koření a dusíme doměkka.
+        \item Zahustíme moukou rozmíchanou ve vodě a ještě 10 minut povaříme.
+        \item Nakonec přidáme drcený česnek a majoránku.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BrickRed]{Rajská omáčka}
+    \begin{ingredients}
+        \item \weight \textbf{1 kg} \\ Hovězího masa (zadní)
+        \item \piece \textbf{2 ks} \\ Velké cibule a 2 PL másla
+        \item \liquid \textbf{2 ks} \\ Velké rajské protlaky
+        \item \piece \textbf{15 KL} \\ Cukru krupice
+        \item \indefinite \textbf{koření} \\ Skořice (2 KL), nové koření, pepř, bobkový list
+        \item \spoon \textbf{2 PL} \\ Hladké mouky
+    \end{ingredients}
+    \begin{steps}
+        \item Maso uvaříme v papiňáku s kořením doměkka. Vývar schováme.
+        \item Na másle osmažíme cibuli, přidáme mouku a uděláme světlou jíšku.
+        \item Rozředíme vývarem, přidáme protlaky, cukr a skořici.
+        \item Povaříme 10 minut a přecedíme přes síto, aby byla omáčka hladká. Podáváme s knedlíkem nebo těstovinami.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[ForestGreen]{Bramborák (i s masem)}
+    \begin{ingredients}
+        \item \weight \textbf{1 kg} \\ Brambor
+        \item \piece \textbf{2 ks} \\ Vejce
+        \item \piece \textbf{8 stroužků} \\ Česneku
+        \item \spoon \textbf{1 PL} \\ Hladké mouky a hrst strouhanky
+        \item \indefinite \textbf{koření} \\ Sůl, pepř, majoránka
+        \item \weight \textbf{2 ks} \\ Kuřecí prsa (volitelně do těsta)
+    \end{ingredients}
+    \begin{steps}
+        \item Brambory nastrouháme a vymačkáme z nich přebytečnou vodu.
+        \item Přidáme vejce, mouku, strouhanku, drcený česnek a koření.
+        \item Pokud chceme, přidáme na malé kousky nakrájené syrové kuřecí maso.
+        \item Smažíme v rozpáleném oleji dozlatova z obou stran.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BurntOrange]{Kuře na paprice}
+    \begin{ingredients}
+        \item \piece \textbf{4 ks} \\ Kuřecích prsních řízků
+        \item \piece \textbf{2 ks} \\ Cibule
+        \item \liquid \textbf{1 kelímek} \\ Sladké smetany
+        \item \spoon \textbf{2 PL} \\ Mleté sladké papriky
+        \item \spoon \textbf{2 PL} \\ Másla a trocha oleje
+        \item \spoon \textbf{1--2 PL} \\ Hladké mouky
+    \end{ingredients}
+    \begin{steps}
+        \item Na másle a oleji osmahneme cibuli, přidáme maso na nudličky, osolíme a orestujeme.
+        \item Zasypeme paprikou (krátce, aby nezhořkla), zalijeme vodou a dusíme pod pokličkou.
+        \item Když je maso měkké, vmícháme smetanu s rozmíchanou moukou.
+        \item Povaříme 10 minut. Podáváme s těstovinami nebo knedlíkem.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[NavyBlue]{Francouzské brambory}
+    \begin{ingredients}
+        \item \piece \textbf{10 ks} \\ Brambor (syrové plátky)
+        \item \weight \textbf{500 g} \\ Uzeného masa nebo točeného salámu
+        \item \piece \textbf{3 ks} \\ Cibule
+        \item \piece \textbf{3 ks} \\ Vejce
+        \item \liquid \textbf{150 ml} \\ Mléka nebo smetany
+        \item \piece \textbf{5 plátků} \\ Anglické slaniny (navrch)
+    \end{ingredients}
+    \begin{steps}
+        \item Do vymazaného pekáče vrstvíme: brambory (osolit/opepřit), cibuli a maso. Končíme vrstvou brambor.
+        \item Pečeme v troubě na 180 °C asi 30 minut.
+        \item Poté zalijeme vejci rozšlehanými v mléce a poklademe slaninou.
+        \item Dopékáme další půlhodinu, dokud nejsou brambory měkké.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[OliveGreen]{Houbová bílá omáčka}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Masa (hovězí nebo vepřové)
+        \item \weight \textbf{300 g} \\ Čerstvých hub (kostky)
+        \item \piece \textbf{2 ks} \\ Cibule
+        \item \liquid \textbf{1 kelímek} \\ Šlehačky
+        \item \spoon \textbf{2 PL} \\ Hladké mouky
+        \item \indefinite \textbf{koření} \\ Sůl, pepř, kmín
+    \end{ingredients}
+    \begin{steps}
+        \item Na sádle osmažíme cibuli dozlatova, přidáme maso na kostky a orestujeme.
+        \item Osolíme, okmínujeme a dusíme (u hovězího podlijeme a dusíme hodinu, pak přidáme houby; u vepřového dáváme houby hned).
+        \item Do měkkého masa vlijeme smetanu s moukou.
+        \item Povaříme a dochutíme. Podáváme s houskovým knedlíkem.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% SPECIALITY A RYCHLOVKY (OD PŮLDY A DALŠÍ)
+% ==========================================
+
+\begin{recipe}[ForestGreen]{Čína od Půldy}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Kuřecích prsou
+        \item \piece \textbf{2 ks} \\ Velké cibule
+        \item \liquid \textbf{100 ml} \\ Oleje (na naložení)
+        \item \piece \textbf{1 bal.} \\ Mražená asijská zelenina
+        \item \spoon \textbf{50 ml} \\ Ústřicové omáčky
+        \item \spoon \textbf{1 PL} \\ Sójové omáčky (nesolené)
+    \end{ingredients}
+    \begin{steps}
+        \item Maso nakrájíme na nudličky, obalíme v koření na čínu, zalijeme olejem a necháme uležet (nejlépe do druhého dne).
+        \item Na pánvi osmahneme cibuli, přidáme naložené maso a restujeme doměkka.
+        \item Přidáme zeleninu, promícháme a 5 minut dusíme pod pokličkou.
+        \item Dochutíme ústřicovou a sójovou omáčkou, chilli a pepřem. Podáváme s čínskými nudlemi.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[NavyBlue]{Těstoviny s pršutem od Půldy}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Těstovin (tagliatelle)
+        \item \weight \textbf{200 g} \\ Libového pršutu
+        \item \piece \textbf{2 malé} \\ Konzervy jemného hrášku
+        \item \liquid \textbf{100 ml} \\ Olivového oleje
+        \item \weight \textbf{100 g} \\ Parmazánu (strouhaný)
+    \end{ingredients}
+    \begin{steps}
+        \item Těstoviny uvaříme v osolené vodě dle návodu a scedíme.
+        \item Promícháme s olivovým olejem, hráškem a pršutem nakrájeným na tenké proužky.
+        \item Na talíři bohatě zasypeme strouhaným parmazánem.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[RawSienna]{Halušky s brynzou od Půldy}
+    \begin{ingredients}
+        \item \piece \textbf{2 sáčky} \\ Halušek v prášku
+        \item \weight \textbf{1 ks} \\ Brynza (ve staniolu)
+        \item \piece \textbf{2 nožičky} \\ Pikantní klobásy
+        \item \weight \textbf{300 g} \\ Slaniny a 2 cibule
+        \item \spoon \textbf{2 PL} \\ Sádla
+    \end{ingredients}
+    \begin{steps}
+        \item Připravíme halušky podle návodu, scedíme a propláchneme studenou vodou.
+        \item Ještě horké halušky promícháme s brynzou.
+        \item Na sádle osmažíme cibuli se slaninou a ke konci přidáme opéct i klobásu na půlkolečka.
+        \item Halušky podáváme posypané touto smaženou směsí.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[BrickRed]{Pštrosí vejce}
+    \begin{ingredients}
+        \item \piece \textbf{4 ks} \\ Vajec (natvrdo)
+        \item \weight \textbf{500 g} \\ Mletého masa (mix)
+        \item \piece \textbf{2 ks} \\ Syrová vejce (do masa)
+        \item \indefinite \textbf{koření} \\ Sůl, pepř, majoránka, paprika
+        \item \spoon \textbf{2 PL} \\ Strouhanky a panák vody
+    \end{ingredients}
+    \begin{steps}
+        \item Mleté maso smícháme s kořením, syrovými vejci, strouhankou a vodou. Musí být lepivé.
+        \item Oloupaná vařená vejce obalíme masovou směsí tak, aby vznikla koule.
+        \item Dáme do vymazaného pekáčku a pečeme cca 40 minut na 180 °C.
+        \item Podáváme s bramborovou kaší nebo zastudena s chlebem a hořčicí.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Goldenrod]{Šunkofleky}
+    \begin{ingredients}
+        \item \weight \textbf{250 g} \\ Těstovin (fleky)
+        \item \weight \textbf{250 g} \\ Uzeného masa
+        \item \piece \textbf{4 ks} \\ Vejce
+        \item \liquid \textbf{200 ml} \\ Mléka nebo smetany
+        \item \indefinite \textbf{koření} \\ Sůl, pepř, kari
+    \end{ingredients}
+    \begin{steps}
+        \item Těstoviny uvaříme a dáme do vymazaného pekáče. Přidáme nakrájené uzené a koření.
+        \item Dáme na 10--15 minut zapéct do trouby na 200 °C.
+        \item Zalijeme vejci rozšlehanými v osoleném mléce.
+        \item Pečeme, dokud vejce neztuhnou a vršek není dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Crimson]{Vinná klobása}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Vinné klobásy
+        \item \spoon \textbf{2 PL} \\ Hladké mouky
+        \item \indefinite \textbf{koření} \\ Grilovací koření
+        \item \liquid \textbf{na smažení} \\ Olej
+    \end{ingredients}
+    \begin{steps}
+        \item Klobásu nakrájíme na kousky (žížalky) a obalíme v mouce smíchané s kořením.
+        \item Smažíme dozlatova na pánvi.
+        \item **Alternativa:** Zatočíme do šneka, propíchneme špejlí a pečeme v troubě na pečicím papíru.
+    \end{steps}
+\end{recipe}
+
+% ==========================================
+% ZÁVĚREČNÉ SPECIALITY A TEČKA
+% ==========================================
+
+\begin{recipe}[ForestGreen]{Červencová smaženice (z chaty)}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Lesních hub (směs)
+        \item \weight \textbf{250 g} \\ Anglické slaniny
+        \item \piece \textbf{1 ks} \\ Velká cibule
+        \item \piece \textbf{2 stroužky} \\ Česneku
+        \item \spoon \textbf{2 PL} \\ Sádla
+        \item \indefinite \textbf{2 KL} \\ Mletého kmínu, sůl, pepř
+    \end{ingredients}
+    \begin{steps}
+        \item Houby očistíme a nakrájíme na kostky. Cibuli nasekáme nadrobno.
+        \item Na sádle opečeme cibuli se slaninou. Přidáme česnek a houby.
+        \item Osolíme, okmínujeme a dusíme doměkka (podle potřeby lehce podlijeme).
+        \item Podáváme s čerstvým chlebem.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[DarkCyan]{Špízy}
+    \begin{ingredients}
+        \item \weight \textbf{500 g} \\ Kuřecích prsou
+        \item \piece \textbf{2 ks} \\ Papriky (červená, žlutá)
+        \item \piece \textbf{2 nožičky} \\ Pálivé klobásy
+        \item \piece \textbf{3 ks} \\ Cibule
+        \item \indefinite \textbf{dle chuti} \\ Grilovací koření, olej
+    \end{ingredients}
+    \begin{steps}
+        \item Maso nakrájíme na špalíčky a naložíme přes noc do oleje s kořením.
+        \item Na špejli střídavě napichujeme maso, cibuli, klobásu a papriku.
+        \item Opékáme na grilu, pánvi nebo pečeme v troubě.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Sienna]{Živáňská v alobalu}
+    \begin{ingredients}
+        \item \weight \textbf{400 g} \\ Masa (kuřecí nebo vepřové)
+        \item \piece \textbf{4 ks} \\ Brambory (na plátky)
+        \item \piece \textbf{1 ks} \\ Klobása a 1 ks paprika
+        \item \weight \textbf{40 dkg} \\ Anglické slaniny a 1 cibule
+        \item \indefinite \textbf{dle chuti} \\ Sůl, pepř, kmín
+    \end{ingredients}
+    \begin{steps}
+        \item Připravíme si čtverce alobalu (raději dvojitě). Střed potřeme máslem.
+        \item Vrstvíme: brambory, maso, cibuli, papriku, klobásu a navrch slaninu.
+        \item Alobal pečlivě zabalíme do balíčků, aby nevytekla šťáva.
+        \item Pečeme na plechu cca 1 hodinu při 200 °C.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[MidnightBlue]{Pivní placičky (od Olega)}
+    \begin{ingredients}
+        \item \piece \textbf{4 ks} \\ Kuřecích řízků
+        \item \piece \textbf{2 ks} \\ Vejce (těstíčko)
+        \item \liquid \textbf{2 dcl} \\ Piva (těstíčko)
+        \item \spoon \textbf{2 PL} \\ Sójové omáčky a 2 PL solamylu
+        \item \spoon \textbf{4 PL} \\ Hladké mouky
+    \end{ingredients}
+    \begin{steps}
+        \item Kuřecí maso nakrájíme na malé kostičky.
+        \item Smícháme suroviny na těstíčko, vložíme do něj maso a necháme přes noc uležet.
+        \item Na pánvi smažíme lžící tvořené placičky dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[Goldenrod]{Plnění šneci}
+    \begin{ingredients}
+        \item \weight \textbf{300 g} \\ Hladké mouky a 200 g tuku
+        \item \spoon \textbf{3 PL} \\ Zakysané smetany (těsto)
+        \item \weight \textbf{200 g} \\ Šunky (mleté/sekané)
+        \item \weight \textbf{300 g} \\ Tvrdého sýra (strouhaný)
+        \item \liquid \textbf{1/2 hrnku} \\ Zakysané smetany (náplň)
+    \end{ingredients}
+    \begin{steps}
+        \item Vypracujeme těsto, necháme 30 min v lednici.
+        \item Náplň: smícháme sýr, šunku, vejce, pepř a smetanu.
+        \item Těsto vyválíme na plát, potřeme směsí a srolujeme jako roládu.
+        \item Krájíme na kolečka, klademe na plech a pečeme dozlatova.
+    \end{steps}
+\end{recipe}
+
+\begin{recipe}[OrangeRed]{Rychlé koblížky (babi Jižňácká)}
+    \begin{ingredients}
+        \item \weight \textbf{250 g} \\ Polohrubé mouky
+        \item \piece \textbf{1 ks} \\ Tvaroh (vanička)
+        \item \piece \textbf{3 ks} \\ Vejce a 1 prdopeč
+        \item \spoon \textbf{3 PL} \\ Moučkového cukru
+        \item \liquid \textbf{5 PL} \\ Mléka a 5 PL rumu
+    \end{ingredients}
+    \begin{steps}
+        \item Všechny suroviny smícháme v misce.
+        \item Lžící děláme hromádky přímo do rozpáleného oleje.
+        \item Smažíme dorůžova. Obalujeme v cukru nebo zdobíme marmeládou.
+    \end{steps}
+\end{recipe}
+
+\end{document}
+
+\end{document}

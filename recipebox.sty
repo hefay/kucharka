@@ -1,0 +1,82 @@
+\ProvidesPackage{recipebox}[2026/05/14 Vertikalni Recepty Kniha]
+\RequirePackage[x11names,svgnames,dvipsnames]{xcolor}
+\RequirePackage{tabularx}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{fontawesome5}
+\RequirePackage{environ}
+\RequirePackage{multicol}
+
+% Základní barvy
+\definecolor{darkslate}{RGB}{44, 62, 80}
+
+% Definice ikonek
+\newcommand{\spoon}{\textcolor{\currentrecipecolor}{\faUtensilSpoon}\hspace{0.5em}}
+\newcommand{\tsp}{\textcolor{\currentrecipecolor}{\faUtensils}\hspace{0.5em}}
+\newcommand{\weight}{\textcolor{\currentrecipecolor}{\faWeightHanging}\hspace{0.5em}}
+\newcommand{\piece}{\textcolor{\currentrecipecolor}{\faBoxOpen}\hspace{0.5em}}
+\newcommand{\indefinite}{\textcolor{\currentrecipecolor}{\faLeaf}\hspace{0.5em}}
+\newcommand{\temp}{\textcolor{\currentrecipecolor}{\faThermometerHalf}\hspace{0.5em}}
+\newcommand{\liquid}{\textcolor{\currentrecipecolor}{\faTint}\hspace{0.5em}}
+
+\global\def\recipemacroingredients{}
+\global\def\recipemacrosteps{}
+
+\NewEnviron{ingredients}{\global\let\recipemacroingredients\BODY}
+\NewEnviron{steps}{\global\let\recipemacrosteps\BODY}
+
+% Prostředí receptu
+\newenvironment{recipe}[2][darkslate]{%
+    \def\currentrecipecolor{#1}\def\currentrecipetitle{#2}%
+    \global\let\recipemacroingredients\empty\global\let\recipemacrosteps\empty
+}{%
+    % Tímto zajistíme, že se název receptu automaticky přidá do Obsahu!
+    \phantomsection
+    \addcontentsline{toc}{section}{\currentrecipetitle}
+    
+    \vspace{1.5em}
+    \begin{tcolorbox}[
+        enhanced,
+        colframe=\currentrecipecolor,
+        colback=\currentrecipecolor!3,
+        arc=4mm,
+        boxrule=1.5pt,
+        shadow={2mm}{-2mm}{0mm}{black!10},
+        title={\Large\bfseries\currentrecipetitle},
+        coltitle=white,
+        colbacktitle=\currentrecipecolor,
+        fonttitle=\sffamily,
+        toptitle=3mm, bottomtitle=3mm,
+    ]
+    
+    \vspace{1mm}
+    {\large\color{\currentrecipecolor}\textbf{\textsf{Ingredience}}}\vspace{2mm}
+    
+    \begin{multicols}{2}
+    \begin{itemize}[
+        label={}, 
+        leftmargin=2mm, 
+        itemsep=3mm
+    ]
+        \recipemacroingredients
+    \end{itemize}
+    \end{multicols}
+    
+    \tcbline 
+    
+    {\large\color{\currentrecipecolor}\textbf{\textsf{Technologický postup}}}\vspace{2mm}
+    
+    \begin{enumerate}[
+        leftmargin=10mm, 
+        rightmargin=5mm, 
+        topsep=0mm, 
+        itemsep=2mm, 
+        label=\color{\currentrecipecolor}\bfseries\arabic*.
+    ]
+        \recipemacrosteps
+    \end{enumerate}
+    
+    \end{tcolorbox}
+    \vspace{1em}
+}
