@@ -7,6 +7,8 @@
 \RequirePackage{fontawesome5}
 \RequirePackage{environ}
 \RequirePackage{multicol}
+\RequirePackage{tocloft}
+\RequirePackage{multicol}
 
 % Základní barvy
 \definecolor{darkslate}{RGB}{44, 62, 80}
@@ -19,6 +21,26 @@
 \newcommand{\indefinite}{\textcolor{\currentrecipecolor}{\faLeaf}\hspace{0.5em}}
 \newcommand{\temp}{\textcolor{\currentrecipecolor}{\faThermometerHalf}\hspace{0.5em}}
 \newcommand{\liquid}{\textcolor{\currentrecipecolor}{\faTint}\hspace{0.5em}}
+
+\renewcommand{\cftsecdotsep}{\cftdotsep} % Přidá tečky pro sekce
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsecfont}{\small\bfseries}    % Název receptu v obsahu
+\renewcommand{\cftsecpagefont}{\small\normalfont} % Číslo stránky
+\setlength{\cftbeforesecskip}{2pt}
+
+\newcommand{\printcompacttoc}{
+    \newpage
+    \centering{\Huge\bfseries\color{Mahogany}Seznam receptů}
+    \vspace{1cm}
+    \begin{multicols}{2}
+        \pagestyle{plain}
+        \renewcommand{\contentsname}{} % Odstraníme výchozí nadpis "Obsah"
+        \makeatletter
+        \@starttoc{toc} % Vykreslí samotný seznam bez nadpisu
+        \makeatother
+    \end{multicols}
+    \newpage
+}
 
 \global\def\recipemacroingredients{}
 \global\def\recipemacrosteps{}
