@@ -3,14 +3,19 @@
   body{margin:0;padding:0;overflow:hidden;font-family:sans-serif;background:#525659;} 
   header{height:60px;background:#8b0000;color:white;display:flex;align-items:center;padding:0 20px;justify-content:space-between;box-shadow: 0 2px 10px rgba(0,0,0,0.3);}
   .title-group{display:flex;align-items:center;gap:15px;}
-  .btns{display:flex;align-items:center;gap:10px;}
+  .btns{display:flex;align-items:center;gap:10px;margin-right:165px;}
   header a.btn{color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.5);padding:8px 15px;border-radius:4px;font-size:14px;background:rgba(255,255,255,0.1);}
   header a.btn:hover{background:white;color:#8b0000;}
-  header a.github-link{display:flex;align-items:center;padding:6px;border-radius:4px;}
-  header a.github-link:hover{background:rgba(255,255,255,0.2);}
   iframe{width:100%;height:calc(100vh - 60px);border:none;}
+  .github-fork-ribbon{width:12.1em;height:12.1em;position:absolute;overflow:hidden;top:0;right:0;z-index:9999;pointer-events:none;font-size:13px;text-decoration:none;text-indent:-999999px;}
+  .github-fork-ribbon.fixed{position:fixed;}
+  .github-fork-ribbon:hover,.github-fork-ribbon:active{background-color:rgba(0,0,0,0);}
+  .github-fork-ribbon:before,.github-fork-ribbon:after{position:absolute;display:block;width:15.38em;height:1.54em;top:3.23em;right:-3.23em;box-sizing:content-box;transform:rotate(45deg);}
+  .github-fork-ribbon:before{content:"";padding:.38em 0;background-color:#8b0000;background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.15));box-shadow:0 .15em .23em 0 rgba(0,0,0,0.5);pointer-events:auto;}
+  .github-fork-ribbon:after{content:attr(data-ribbon);color:#fff;font:700 1em "Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.54em;text-decoration:none;text-shadow:0 -.08em rgba(0,0,0,0.5);text-align:center;text-indent:0;padding:.15em 0;margin:.15em 0;border-width:.08em 0;border-style:dotted;border-color:rgba(255,255,255,0.7);}
 </style></head>
 <body>
+  <a class="github-fork-ribbon" href="https://github.com/hefay/kucharka" data-ribbon="Fork me on GitHub" title="Zobrazit zdroj na GitHubu" target="_blank">Fork me on GitHub</a>
   <header>
     <div class="title-group">
       <span style="font-size: 20px;">📖</span>
@@ -19,9 +24,6 @@
     <div class="btns">
       <a href="https://github.com/hefay/kucharka/edit/main/main.tex" class="btn" target="_blank">✍️ Upravit recepty</a>
       <a href="kucharka.pdf" class="btn" download>📥 Stáhnout PDF</a>
-      <a href="https://github.com/hefay/kucharka" class="github-link" title="Zdrojový kód na GitHubu" target="_blank">
-        <svg width="24" height="24" viewBox="0 0 496 512" fill="white" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 0 0 21.9 38.6 63.5 27.5 0 0 9.8-48.7 12.2-58.5 0 0-53.3-11.6-81.7-55.1 0 0-11.1-22.4-11.1-44.4 0 0 0-34.5 23.3-45.2 0 0 10.7-3.3 27.8 8.6 0 0 25.5-7.1 64.6-7.1s39.1 7.1 39.1 7.1c17.1-11.9 27.8-8.6 27.8-8.6 23.3 10.7 23.3 45.2 23.3 45.2 0 22.2-11.1 44.4-11.1 44.4-28.4 43.5-81.7 55.1-81.7 55.1 2.6 12.2 12.2 58.5 12.2 58.5 41.6 9.2 63.5-27.5 63.5-27.5 16.7-23.7 38.6-25.8 38.6-25.8 24.5-.3 1.6 15.4 1.6 15.4-16.4 7.5-27.8 36.6-27.8 36.6-14.7 14.8-84.7 29.8-84.7 29.8 0 21.2 0 55.2 0 61.4 0 6.5 4.5 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
-      </a>
     </div>
   </header>
   <iframe src="kucharka.pdf"></iframe>
